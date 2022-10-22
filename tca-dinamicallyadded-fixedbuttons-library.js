@@ -43,6 +43,7 @@ function createButtonsSet(
     /* string - pattern how to build 'id' of the button */ buttonsIDpattern,
     /* string - buttons group name */ buttonsGroupName = '',
     /* string - pattern how to build 'class' of the button */ buttonsClassPattern = 'input-',
+    /* string - pattern how to build 'class' of the label of the button */ buttonsLabelClassPattern = 'label-',
     /* string - type of the button. Checked for 'checkbox' and 'radio' */ buttonsType = 'checkbox',
     /* string - additonal class(-es) for the button */ additionalClass = '' )
 {
@@ -64,7 +65,7 @@ function createButtonsSet(
         } else {
             checkedVal = ''
         }
-        $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' ' + additionalClass + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="pcab-label-' + buttonsType + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
+        $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' ' + additionalClass + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="' + buttonsLabelClassPattern + buttonsType + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
     })
 }
 
