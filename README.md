@@ -9,12 +9,12 @@ Of course, you can use standard elements, radios or checkboxes. And you can do i
 
 <h3 align="center">How to use</h3>
 <h4>JS-part/calls</h4>
-#####Example:
+##### Example: #####
 Function using: createButtonsSet("#itemsAQ", arraySet, 'qualification', "cdetail_id", "detail_value", 'qlf_', 'qualification', 'pcab-input-','checkbox')
 fills <div id="itemsSkills"></div> with set of button checkboxes (multi selectionn allowed) 
 from array: [{cdetail_id: '1', detail_value: 'Care of exotic plants'}, {cdetail_id: '3', detail_value: 'Pines, cedars, and other resinous trees'}]
 
-#####Result:
+##### Result: #####
     <div class="mb-3 input-group flex-nowrap" id="itemsAQ">
         <input class="pcab-input-checkbox  " id="qlf_1" type="checkbox" value="1" name="qualification" checked="" hidden="">
             <label class="pcab-label-checkbox" for="qlf_1">Care of exotic plants</label>
