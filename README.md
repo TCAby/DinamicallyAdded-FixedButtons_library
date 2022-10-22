@@ -9,8 +9,10 @@ Of course, you can use standard elements, radios or checkboxes. And you can do i
 
 <h3 align="center">How to use</h3>
 <h4>JS-part/calls</h4>
+
 ##### Example: #####
-Function using: createButtonsSet("#itemsAQ", arraySet, 'qualification', "cdetail_id", "detail_value", 'qlf_', 'qualification', 'pcab-input-','checkbox')
+Function using: 
+    createButtonsSet("#itemsAQ", arraySet, 'qualification', "cdetail_id", "detail_value", 'qlf_', 'qualification', 'pcab-input-','checkbox')
 fills <div id="itemsSkills"></div> with set of button checkboxes (multi selectionn allowed) 
 from array: [{cdetail_id: '1', detail_value: 'Care of exotic plants'}, {cdetail_id: '3', detail_value: 'Pines, cedars, and other resinous trees'}]
 
@@ -21,4 +23,9 @@ from array: [{cdetail_id: '1', detail_value: 'Care of exotic plants'}, {cdetail_
         <input class="pcab-input-checkbox  " id="qlf_3" type="checkbox" value="3" name="qualification" checked="" hidden="">
             <label class="pcab-label-checkbox" for="qlf_3">Pines, cedars, and other resinous trees</label>
     </div>
+
 <h4>CSS</h4>
+
+Don't forget to upload the CSS file as well. It contains the secret of why a button looks like a button but behaves like an input (radio or checkbox).
+
+Do not forget that the names of the classes in css must match the classes that will be obtained after passing the parameters of the createButtonsSet function call.
