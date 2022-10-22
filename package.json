@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "license": "GPL-3.0-or-later",
   "description": "jQuery Dinamically Added FixedButtons Plugin: Changes input type=\"radio\" or type=\"checkbox\" to button style with visible status (button fix-pressed/unpressed)",
-  "main": "tca-dinamicallyadded-fixedbuttons-library.js",
+  "main": "tca-dinamicallyadded-fixedbuttons-library.min.js",
   "repository": "github:TCAby/DinamicallyAdded-FixedButtons_library",
   "dependencies": {
     "jquery": "^3.6.1"
