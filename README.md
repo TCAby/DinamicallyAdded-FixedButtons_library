@@ -1,6 +1,7 @@
-<h1 align="center">Hi there, <strong>DinamicallyAdded-FixedButtons_library</strong> welcomes you!  
+<h1 align="center">Hi there, <strong>Dinamically Added Fixed Buttons plugin</strong> welcomes you!  
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">jQuery Plugin</h3>
 
-# DinamicallyAdded-FixedButtons_library
-jQuery Dinamically Added FixedButtons Plugin: Changes input type="radio" or type="checkbox" to button style with visible status (button fix-pressed/unpressed)
+How can this plugin be useful to you?
+<img src="https://tools.tca.by/plugins/DinamicallyAdded-FixedButtons_library/DinamicallyAdded-FixedButtons_library.png" alt="example">
+Imagine you have an array of possible options from which your user needs to select one or more values. Of course, you can use standard elements, radios or checkboxes. And you can do it beautifully and non-standard, with the help of buttons that are fixed in the pressed state - just like in the picture!
