@@ -47,8 +47,15 @@ function createButtonsSet(
     /* string - type of the button. Checked for 'checkbox' and 'radio' */ buttonsType = 'checkbox',
     /* string - additonal class(-es) for the button */ additionalClass = '' )
 {
-    if ( !document.querySelector(blockID) ) {
-        return false
+    try {
+        if ( !document.querySelector(blockID) ) {
+            return false
+        }
+    } catch (e) {
+        if (e instanceof DOMException) {
+            console.log('Incorrect ID of the block :"' + blockID + '"')
+        }
+        console.log(e)
     }
     if (typeof arrayList != 'object') {
         console.log('Wrong arrayList type. Needs "object", given: ', typeof arrayList)
