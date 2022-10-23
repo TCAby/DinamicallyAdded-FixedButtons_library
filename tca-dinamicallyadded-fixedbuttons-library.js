@@ -10,9 +10,9 @@
  *
  * @param blockID
  * @param arrayList
- * @param catIndex
  * @param nameArrayID
  * @param nameArrayValue
+ * @param checkedButtons
  * @param buttonsIDpattern
  * @param buttonsGroupName
  * @param buttonsClassPattern
@@ -63,9 +63,11 @@ function createButtonsSet(
         return false
     }
     $(blockID).html('')
+console.log(arrayList)
     $.each(arrayList, function(k, v) {
-        if (typeof checkedButtons != 'undefined' ) {
-            if ( checkedButtons.includes( v["cdetail_id"] ) ) {
+console.log(k, v)
+        if (typeof checkedButtons != 'undefined' && typeof checkedButtons != 'array' && typeof checkedButtons != 'object' ) {
+            if ( checkedButtons.includes( v[nameArrayID] ) ) {
                 checkedVal = ' checked'
             } else {
                 checkedVal = ''
