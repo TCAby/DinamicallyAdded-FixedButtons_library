@@ -1,6 +1,7 @@
 <h1 align="center">Hi there,<br><strong>&laquo;𝔻𝕚𝕟𝕒𝕞𝕚𝕔𝕒𝕝𝕝𝕪 𝔸𝕕𝕕𝕖𝕕 𝔽𝕚𝕩𝕖𝕕 𝔹𝕦𝕥𝕥𝕠𝕟𝕤 𝕡𝕝𝕦𝕘𝕚𝕟&raquo;</strong> welcomes you!  
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h2 align="center">jQuery Plugin</h2>
+
 **Important note:** Check actual version into GitHub (https://github.com/TCAby/DinamicallyAdded-FixedButtons_library)
 
 How can this plugin be useful to you?
