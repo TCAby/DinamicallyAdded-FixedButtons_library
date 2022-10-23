@@ -52,9 +52,9 @@ function createButtonsSet(
             return false
         }
     } catch (e) {
-        if (e instanceof DOMException) {
+        //if (e instanceof DOMException) {
             console.log('Incorrect ID of the block :"' + blockID + '"')
-        }
+        //}
         console.log(e)
     }
     if (typeof arrayList != 'object') {
