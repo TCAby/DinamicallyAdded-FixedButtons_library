@@ -3,7 +3,7 @@
     Changes input type="radio" or type="checkbox" to button style with visible status (button fix-pressed/unpressed)
     Copyright (c) 2022 Vitaly Trakhtenberg (tca.by)
     Licensed under the GPL license (https://tools.tca.by/software/dinamicallyadded-fixedbuttons-plugin/#license)
-    Version: 1.0.1
+    Version: 1.0.2
 */
 
 /**
