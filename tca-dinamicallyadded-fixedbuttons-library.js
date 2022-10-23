@@ -37,15 +37,16 @@
 function createButtonsSet(
     /* integer - ID of element-"wrapper" of the created set of buttons */ blockID,
     /* Array of source data for the buttons */ arrayList,
-    /* string - name of column 'Index' */ catIndex,
     nameArrayID,
     nameArrayValue,
+    /* Array of pressed (checked) buttons */ checkedButtons,
     /* string - pattern how to build 'id' of the button */ buttonsIDpattern,
     /* string - buttons group name */ buttonsGroupName = '',
     /* string - pattern how to build 'class' of the button */ buttonsClassPattern = 'input-',
     /* string - pattern how to build 'class' of the label of the button */ buttonsLabelClassPattern = 'label-',
     /* string - type of the button. Checked for 'checkbox' and 'radio' */ buttonsType = 'checkbox',
-    /* string - additonal class(-es) for the button */ additionalClass = '' )
+    /* string - additonal class(-es) for the button */ additionalClass = ''
+)
 {
     try {
         if ( !document.querySelector(blockID) ) {
@@ -63,8 +64,8 @@ function createButtonsSet(
     }
     $(blockID).html('')
     $.each(arrayList, function(k, v) {
-        if (typeof selectedCategoryDetails[catIndex] != 'undefined' ) {
-            if ( selectedCategoryDetails[catIndex].includes( v["cdetail_id"] ) ) {
+        if (typeof checkedButtons != 'undefined' ) {
+            if ( checkedButtons.includes( v["cdetail_id"] ) ) {
                 checkedVal = ' checked'
             } else {
                 checkedVal = ''
