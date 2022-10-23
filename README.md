@@ -23,6 +23,11 @@ from array: [{cdetail_id: '1', detail_value: 'Care of exotic plants'}, {cdetail_
         <input class="pcab-input-checkbox  " id="qlf_3" type="checkbox" value="3" name="qualification" checked="" hidden="">
             <label class="pcab-label-checkbox" for="qlf_3">Pines, cedars, and other resinous trees</label>
     </div>
+	
+##### List of functions #####
++ createButtonsSet() - creates set of buttons. You can use multiple sets on the page, it manages the third parameter - 'qualification' in the example above;
++ numberCheckedButtons() - returns how many buttons in the set are pressed;
++ arrayCheckedButtons() - returns array of value(-s) of pressed buttons for the set.	
 
 <h4>CSS</h4>
 
