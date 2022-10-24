@@ -3,7 +3,7 @@
     Changes input type="radio" or type="checkbox" to button style with visible status (button fix-pressed/unpressed)
     Copyright (c) 2022 Vitaly Trakhtenberg (tca.by)
     Licensed under the GPL license (https://tools.tca.by/software/dinamicallyadded-fixedbuttons-plugin/#license)
-    Version: 1.0.2
+    Version: 1.0.3
 */
 
 /**
@@ -73,7 +73,7 @@ function createButtonsSet(
         } else {
             checkedVal = ''
         }
-        $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' ' + additionalClass + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="' + buttonsLabelClassPattern + buttonsType + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
+        $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="' + buttonsLabelClassPattern + buttonsType + ' ' + additionalClass + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
     })
 }
 
