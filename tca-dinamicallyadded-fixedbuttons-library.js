@@ -35,10 +35,10 @@
  * Note: appearance depends on CSS parameters
  */
 function createButtonsSet(
-    /* integer - ID of element-"wrapper" of the created set of buttons */ blockID,
-    /* Array of source data for the buttons */ arrayList,
-    nameArrayID,
-    nameArrayValue,
+    /* string - ID of element-"wrapper" of the created set of buttons */ blockID,
+    /* Object/Array of source data for the buttons, like arrayList[(nameArrayID : id, nameArrayValue : value)] */ arrayList,
+    /* string - the name of the array property for the element id */ nameArrayID,
+    /* string - the name of the array property for the element value */ nameArrayValue,
     /* Array of pressed (checked) buttons */ checkedButtons,
     /* string - pattern how to build 'id' of the button */ buttonsIDpattern,
     /* string - buttons group name */ buttonsGroupName = '',
@@ -48,6 +48,7 @@ function createButtonsSet(
     /* string - additonal class(-es) for the button */ additionalClass = ''
 )
 {
+    blockID = String(blockID)   // prevent blockID values likes 19 etc.
     try {
         if ( !document.querySelector(blockID) ) {
             return false
@@ -70,10 +71,10 @@ function createButtonsSet(
             } else {
                 checkedVal = ''
             }
+            $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="' + buttonsLabelClassPattern + buttonsType + ' ' + additionalClass + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
         } else {
             checkedVal = ''
         }
-        $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="' + buttonsLabelClassPattern + buttonsType + ' ' + additionalClass + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
     })
 }
 
