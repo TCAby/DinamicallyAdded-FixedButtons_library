@@ -71,10 +71,10 @@ function createButtonsSet(
             } else {
                 checkedVal = ''
             }
-            $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="' + buttonsLabelClassPattern + buttonsType + ' ' + additionalClass + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
         } else {
             checkedVal = ''
         }
+        $(blockID).append('<input class="' + buttonsClassPattern + buttonsType + ' " id="' + buttonsIDpattern + v[nameArrayID] + '" type="' + buttonsType + '" value="' + v[nameArrayID] + '" name="' + buttonsGroupName + '"' + checkedVal + ' hidden ><label class="' + buttonsLabelClassPattern + buttonsType + ' ' + additionalClass + '" for="' + buttonsIDpattern + v[nameArrayID] + '">' + v[nameArrayValue] + '</label>')
     })
 }
 
