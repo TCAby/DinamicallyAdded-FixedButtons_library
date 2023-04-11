@@ -92,7 +92,9 @@ function createButtonsSet(
 function numberCheckedButtons(name) {
     let numbChecked = 0
     for(let i = 0; i < $('[name=' + name + ']').length; i++) {
-        if ( $('[name=' + name + ']')[i].checked) { numbChecked ++; }
+        if ($('[name=' + name + ']')[i].checked) {
+            numbChecked ++
+        }
     }
 
     return numbChecked
@@ -106,7 +108,9 @@ function numberCheckedButtons(name) {
 function arrayCheckedButtons(name) {
     let arrCheck = []
     for(let i = 0; i < $('[name=' + name + ']').length; i++) {
-        if ( $('[name=' + name + ']')[i].checked) { arrCheck.push( $('[name=' + name + ']')[i].value ); }
+        if ($('[name=' + name + ']')[i].checked) {
+            arrCheck.push( $('[name=' + name + ']')[i].value )
+        }
     }
 
     return arrCheck
