@@ -66,7 +66,13 @@ function createButtonsSet(
     $(blockID).html('')
     $.each(arrayList, function(k, v) {
         if ( typeof checkedButtons != 'undefined' && (typeof checkedButtons == 'array' || typeof checkedButtons == 'object') ) {
-            if ( checkedButtons.includes( v[nameArrayID] ) ) {
+            let tmpCheckedButtons
+            if (typeof checkedButtons == 'object') {
+                tmpCheckedButtons = Object.values(checkedButtons)
+            } else {
+                tmpCheckedButtons = checkedButtons
+            }
+            if ( tmpCheckedButtons.includes( v[nameArrayID] ) ) {
                 checkedVal = ' checked'
             } else {
                 checkedVal = ''
